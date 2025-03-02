@@ -61,11 +61,8 @@
             </div>
             <div>
               <p class="font-poppins text-base">Task Assigned</p>
-              <h3
-                id="task-assigned-count"
-                class="text-[32px] font-poppins font-bold"
-              >
-                05
+              <h3 id="taskAssigned" class="text-[32px] font-poppins font-bold">
+                06
               </h3>
             </div>
           </div>
@@ -88,9 +85,7 @@
               <img src="/assets/calender.png" alt="" />
             </div>
             <div>
-              <p id="currentDate" class="font-poppins text-[16px]">
-               
-              </p>
+              <p id="currentDate" class="font-poppins text-[16px]"></p>
             </div>
           </div>
         </div>
@@ -102,7 +97,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >ShopEase</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-1"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Fix Mobile Button Issue
               </h3>
               <p
@@ -133,7 +131,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >CloudSync</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-2"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Add Dark Mode
               </h3>
               <p
@@ -150,7 +151,7 @@
                 </h3>
               </div>
               <button
-                id="task-completed-button"
+                id="task-btn-2"
                 class="bg-[#3752FD] text-white text-base font-poppins font-medium rounded-md px-5 py-2.5"
               >
                 Completed
@@ -164,7 +165,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >SwiftPay</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-3"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Optimize Home page
               </h3>
               <p
@@ -181,7 +185,7 @@
                 </h3>
               </div>
               <button
-                id="task-completed-button"
+                id="task-btn-3"
                 class="bg-[#3752FD] text-white text-base font-poppins font-medium rounded-md px-5 py-2.5"
               >
                 Completed
@@ -195,7 +199,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >Meta</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-4"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Add new emoji 🤲
               </h3>
               <p
@@ -212,7 +219,7 @@
                 </h3>
               </div>
               <button
-                id="task-completed-button"
+                id="task-btn-4"
                 class="bg-[#3752FD] text-white text-base font-poppins font-medium rounded-md px-5 py-2.5"
               >
                 Completed
@@ -226,7 +233,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >Google LLC</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-5"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Integrate OpenAI API
               </h3>
               <p
@@ -243,7 +253,7 @@
                 </h3>
               </div>
               <button
-                id="task-completed-button"
+                id="task-btn-5"
                 class="bg-[#3752FD] text-white text-base font-poppins font-medium rounded-md px-5 py-2.5"
               >
                 Completed
@@ -257,7 +267,10 @@
                 class="font-poppins font-medium text-base bg-white py-1 px-3 rounded-md"
                 >Glassdoar</span
               >
-              <h3 class="font-poppins font-medium text-[20px] my-4">
+              <h3
+                id="card-title-6"
+                class="font-poppins font-medium text-[20px] my-4"
+              >
                 Improve Job searching
               </h3>
               <p
@@ -274,7 +287,7 @@
                 </h3>
               </div>
               <button
-                id="task-completed-button"
+                id="task-btn-6"
                 class="bg-[#3752FD] text-white text-base font-poppins font-medium rounded-md px-5 py-2.5"
               >
                 Completed
@@ -300,21 +313,14 @@
               </button>
             </div>
           </div>
-          <div
-            id="main-right-bottom-container"
-            class="main-right-bottom-container"
-            class="border-b border-dashed"
-          >
-            <!-- <div class="history-box">
-                  <p>You have Complete The Task Add Dark Mode at 12:48:15 PM</p>       
-              </div> -->
-          </div>
         </div>
+        <div id="historyAdd" class="p-3"></div>
       </section>
     </main>
 
-    <script src="/js/date.js"></script>
-    
-     
+    <script src="js/spin_color.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/clear-history.js"></script>
+    <script src="js/date.js"></script>
   </body>
 </html>
