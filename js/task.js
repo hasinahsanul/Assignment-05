@@ -8,11 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Board Updated Successfully");
 
     const title = document.getElementById(`card-title-${taskId}`).innerText;
-    const newDate = new Date();
+
+    const now = new Date();
+    const formattedTime = now.toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    });
 
     const logEntry = document.createElement("p");
     logEntry.className = "bg-[#F4F7FF] my-3 py-1 px-3 rounded-lg";
-    logEntry.textContent = `You have completed the task "${title}" at ${newDate}`;
+    logEntry.textContent = `You have completed the task "${title}" at ${formattedTime}`;
 
     historyAdd.appendChild(logEntry);
 
